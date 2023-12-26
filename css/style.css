@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{margin: 0; padding:0; box-sizing: border-box;}
 
 a{text-decoration: none;}
@@ -5,11 +9,20 @@ a:hover{text-decoration: none;}
 li{list-style: none;}
 
 
+
+.extra-div h2{font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+
 .header{
     width: 100%;
     height: 100vh;
     background-image: url('../image/desktop-wallpaper-dairy-farm-dairy-cow.jpg');
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center; /* Optional: adjust the position as needed */
     clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
@@ -65,8 +78,8 @@ li{list-style: none;}
     padding : 12px 35px;
     outline: none;
     color: #fff;
+  font-weight: bold;
     font-size: 1rem;
-    font-weight: 400;
     line-height: 1.4;
     text-align: center;
 }
@@ -81,3 +94,190 @@ li{list-style: none;}
     font-size: 1.3rem;
     padding: 10px 0 20px 0; 
 }
+
+/* extra header div start here */
+
+.extra-div p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.extra-div{
+    background: #fff;
+    border: medium none;
+    padding: 50px !important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+
+/* extra header div finish here */
+
+
+/* product section starts here  */
+
+.product-section {
+    background-image: url('../image/background_milk.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: rgb(14, 13, 13); 
+    width: 100%;
+    height: auto;
+    margin: 120px 0;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.product-div{
+    background: #fff;
+    border: medium none;
+    /* padding: 50px !important; */
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.product-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+
+/* product section ends here */
+
+
+/* contact us stats here  */
+
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+
+}
+
+.contactus:before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+    z-index: -1;
+}
+
+.form-button button{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+
+form:hover .form-button button{
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+
+}
+
+::placeholder{
+    font-size: 0.85 rem;
+}
+/* contact us ends here  */
+
+/* NewsLetter starts here */
+
+.newsletter{
+    width:100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.news-input{
+    border-radius: 100px 0px 0px 100px !important;
+    min-width: 150px;
+    min-height:45px;
+}
+.input-group-text{
+    color: #fff !important;
+    background: #5bc0de !important;
+    border-radius: 0 100px 100px 0!important;
+    min-width: 120px;
+    min-height: 45px;
+}
+
+/* news letter ends here */
+
+
+/* footerstarts */
+
+.footersection{
+    width:100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #00abff;
+    position: relative;
+
+}
+
+
+.footersection p{
+    color: #fff;
+}
+
+.footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footersection h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.myBtn{
+    display:none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index:99;
+    border: none;
+    color: #fff;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.myBtn:hover{
+    background:#606060;
+}
+/* footer ends  */
+
